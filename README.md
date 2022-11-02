@@ -1,6 +1,6 @@
 # Tic Tac Toe solution - Logic / JavaScript development / Code by Rami Al-Saadi in Nov 2 2022
 
-## Live Solution: 
+## Live version: https://rami24t.github.io/spa-tictactoe-Rami24t/
 
 
 ## Instructions for students:
