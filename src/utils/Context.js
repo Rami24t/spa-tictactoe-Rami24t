@@ -5,7 +5,7 @@ export const Context = createContext({});
 export default function ContextProvider({children}) {
 
     const reducer = (prevState, action)=>{
-        console.log(prevState.player);
+       console.log('win: ', prevState.winner);
         switch(action.type){
             case 'reset':
                 return {
@@ -19,7 +19,6 @@ export default function ContextProvider({children}) {
 
             case 'goTo':
                 prevState.moves.length = action.idx+1;
-                console.log(prevState.moves);
                 return {
                     ...prevState, winner: action.move.winner, board: action.move.board, player: action.move.prevPlayer == 'X' ? 'O' : 'X'
                 }
@@ -67,7 +66,10 @@ const [state,dispatch] = useReducer(reducer,
         },
         checkWin:
         function(aBoard){
-            if(
+            console.log(aBoard.filter(sq=>sq!==null).length);
+            if((aBoard.filter(sq=>sq==null)).length===0)
+            return 'No One!';
+            else if(
                 (aBoard[0]!==null && aBoard[0]===aBoard[1] && aBoard[1] === aBoard[2]) ||
                 (aBoard[3]!==null && aBoard[3]===aBoard[4] && aBoard[4]==aBoard[5]) ||
                 (aBoard[6]!==null && aBoard[6]==aBoard[7] && aBoard[7] === aBoard[8]) ||

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/index.css";
+import "./index.css";
 import Game from './components/Game/Game';
 import ContextProvider from "./utils/Context";
 import Footer from "./components/Footer/Footer";

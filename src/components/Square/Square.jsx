@@ -6,8 +6,11 @@ export default function Square({playerLetter, number}) {
 
 const {state, dispatch} = useContext(Context)
 
-const handleClick = () => !state.winner ? dispatch({type: 'clicked', number: number }) : null
+const handleClick = (e) => {
+  e.target.classList.add('selected');
+  !state.winner ? dispatch({type: 'clicked', number: number }) : null;
+}
 
 
-  return <button onClick={handleClick} className="square">{playerLetter}</button>;
+  return <button className={state.winner?' selected square':'square'} onClick={handleClick}>{playerLetter}</button>;
   }

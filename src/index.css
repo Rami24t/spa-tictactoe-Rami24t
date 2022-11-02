@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: "Century Gothic", Futura, sans-serif;
+  }
+
+.board {
+    width: max(40vw,300px);
+    height: max(40vw,300px);
+    margin: 0 auto;
+    background-color: #34495d;
+    color: #eee;
+    border: 6px solid #2c3e61;
+    border-radius: 9px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+  
+  .square {
+    background: transparent;
+    color: #FFF;
+    /* border: 1px solid #999; */
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.square:focus, .square.selected {
+      outline: none;
+      border: 1px solid #999;
+  }
+  
+  .square:hover {
+    background: rgb(31, 136, 132);
+  }
+  
+  .square.winner {
+    background-color: #40bd93;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  ul li{
+    margin: 6px;
+  }
+  li button {
+    background-color: rgb(192, 236, 236);
+    background: linear-gradient(azure, aquamarine);
+    border: 2px solid;
+    border-color: aquamarine;
+    padding: 6px;
+  }
+  li button:active {
+    background: linear-gradient(rgb(156, 255, 255), aquamarine);
+    border-width: 3px;
+  }
+  li button:hover {
+    background: linear-gradient(rgb(186, 255, 255), rgb(156, 255, 222));
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  section >div{
+    min-width: 300px;
+  }
