@@ -80,3 +80,15 @@ html, body {
   section >div{
     min-width: 300px;
   }
+  .status{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #1b2945;
+    filter: blur(0.5px);
+  }
+  footer{
+    text-align: center;
+    padding: 12px;
+    color: #1b2945;
+    font-weight: 700;
+  }
