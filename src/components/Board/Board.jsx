@@ -1,11 +1,16 @@
 import React from "react";
 import Square from "../Square/Square";
+import { useContext } from "react";
+import { Context } from "../../utils/Context";
 
 export default function Board() {
+
+  const {state} = useContext(Context);
+
     const renderSquare = (i) => {
-      return <Square />;
+      return <Square number={i} playerLetter={state.board[i]} />;
     };
-    const status = "Next player is X";
+    const status = state.winner ? 'The winner is '+ state.winner : "Next player is " + state.player;
   
     return (
       <React.Fragment>
