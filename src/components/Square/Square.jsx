@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Context } from "../../utils/Context";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 export default function Square({playerLetter, number}) {
 
 const {state, dispatch} = useContext(Context)
 
+const handleClick = () => !state.winner ? dispatch({type: 'clicked', number: number }) : null
 
-    return <button onClick={()=>!state.winner ? dispatch(
-      {type: 'clicked', number: number }) : null} className="square">{playerLetter}</button>;
+
+  return <button onClick={handleClick} className="square">{playerLetter}</button>;
   }

@@ -24,6 +24,8 @@ export default function ContextProvider({children}) {
                     ...prevState, winner: action.move.winner, board: action.move.board, player: action.move.prevPlayer == 'X' ? 'O' : 'X'
                 }
             case 'clicked':
+                if(prevState.board[action.number])
+                    return prevState
                 prevState.board[action.number]= prevState.player;
                 prevState.moves = [...prevState.moves,
                     {prevPlayer: prevState.player,
