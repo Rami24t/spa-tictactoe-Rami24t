@@ -6,9 +6,7 @@
 ## Snapshots
 
 ![Screenshot 2023-05-15 at 20-14-02 Rami Al-Saadi's JS Tic Tac Toe React js](https://github.com/Rami24t/js-React-TicTacToe-Rami/assets/103028944/a6947145-cdc1-49fa-8711-a2c4b5822467)
-![Screenshot 2023-05-15 at 20-13-00 Rami Al-Saadi's JS Tic Tac Toe React js](https://github.com/Rami24t/js-React-TicTacToe-Rami/assets/103028944/7b4bc6b3-eb94-4e78-8870-f8d8beee67e0)
 ![Screenshot 2023-05-15 at 20-18-26 Rami Al-Saadi's JS Tic Tac Toe React js](https://github.com/Rami24t/js-React-TicTacToe-Rami/assets/103028944/8ef09185-d0cd-4768-9127-16c93de65bf1)
-![Screenshot 2023-05-15 at 20-17-07 Rami Al-Saadi's JS Tic Tac Toe React js](https://github.com/Rami24t/js-React-TicTacToe-Rami/assets/103028944/5b5156a4-2188-4d60-8899-b920a6f4ccd6)
 
 
 ## Challenge:
